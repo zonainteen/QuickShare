@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  }
+  
+  code, pre {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom visual filter classes matching user spec */
+.filter-coffee-glow {
+  filter: contrast(1.1) brightness(1.05) sepia(0.35) saturate(1.3) hue-rotate(-10deg);
+}
+
+.filter-nightlife-neon {
+  filter: contrast(1.3) brightness(0.95) saturate(1.8) drop-shadow(0 0 12px rgba(234, 179, 8, 0.4));
+}
+
+.filter-selfie-soft {
+  filter: contrast(0.95) brightness(1.12) saturate(1.1) blur(0.2px);
+}
+
+.filter-foodie-pop {
+  filter: contrast(1.2) brightness(1.08) saturate(1.65) hue-rotate(5deg);
+}
+
+.filter-moment-retro {
+  filter: contrast(1.15) brightness(0.92) sepia(0.5) saturate(0.85) grayscale(0.2);
+}
+
+.filter-sky-bright {
+  filter: contrast(1.15) brightness(1.18) saturate(1.4) hue-rotate(15deg);
+}
+
+/* QuickClip video filters */
+.effect-soft-blur {
+  filter: blur(2px) contrast(1.05) brightness(1.08);
+}
+
+.effect-color-pop {
+  filter: saturate(2.1) contrast(1.25) brightness(1.05);
+}
+
+/* Hide scrollbar for clean mobile feel */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(250, 204, 21, 0.7);
+  }
+  70% {
+    transform: scale(1.08);
+    box-shadow: 0 0 0 16px rgba(250, 204, 21, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(250, 204, 21, 0);
+  }
+}
+
+.animate-pulse-ring {
+  animation: pulse-ring 2s infinite cubic-bezier(0.45, 0, 0.55, 1);
+}
