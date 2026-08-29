@@ -1,0 +1,11 @@
+{
+  "name": "QuickStatus",
+  "description": "Aplikasi mobile status instan cerdas dengan filter foto/video, auto-caption, multi-platform share (WA, IG, TikTok), QuickClip 8s, dan monetisasi AdMob untuk Android (Material) & iOS (Cupertino).",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "appId": "com.quickstatus.app",
+  "appName": "QuickStatus",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https"
+  },
+  "android": {
+    "allowMixedContent": true
+  }
+}
